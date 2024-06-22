@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - HealthHaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p, ul, li {
+            color: #555;
+        }
+        a {
+            color: #3498db;
+        }
+        .faq-section {
+            margin-bottom: 20px;
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        .faq-answer {
+            display: none;
+            margin: 5px 0 15px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const questions = document.querySelectorAll('.faq-question');
+            questions.forEach(question => {
+                question.addEventListener('click', function () {
+                    this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">HealthHaven</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hospitals.html">Hospitals Near You</a></li>
+                <li><a href="#">Login/Sign Up</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="medication-management.html">Medication Management</a></li>
+                <li><a href="#">Allergy Management</a></li>
+                <li><a href="#">Chatbot</a></li>
+                <li><a href="https://wa.me/6597485002">Speak to Us!</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+        <div class="faq-section">
+            <div class="faq-question">What is HealthHaven?</div>
+            <div class="faq-answer">
+                <p>HealthHaven is an innovative app designed to help you manage your health and wellness by providing personalized health recommendations, tracking your health metrics, and connecting you with health professionals.</p>
+            </div>
+        </div>
+        <div class="faq-section">
+            <div class="faq-question">How do I create an account?</div>
+            <div class="faq-answer">
+                <p>To create an account, simply open our website and navigate to the Login/Sign Up Page. There, follow the on-screen instructions to sign up using your email address or linked social media account.</p>
+            </div>
+        </div>
+        <div class="faq-section">
+            <div class="faq-question">What features does HealthHaven offer?</div>
+            <div class="faq-answer">
+                <p>HealthHaven offers a variety of features including health tracking, personalized health tips, appointment scheduling with health professionals, medication reminders, and more.</p>
+            </div>
+        </div>
+        <div class="faq-section">
+            <div class="faq-question">Is my personal data safe with HealthHaven?</div>
+            <div class="faq-answer">
+                <p>Yes, your personal data is safe with HealthHaven. We implement stringent security measures to protect your data and comply with all relevant privacy laws and regulations.</p>
+            </div>
+        </div>
+        <div class="faq-section">
+            <div class="faq-question">How do I contact customer support?</div>
+            <div class="faq-answer">
+                <p>You can contact our customer support team through the app by navigating to the 'Contact Us' section or by emailing us at admin@healthhaven.com.</p>
+            </div>
+        </div>
+    </div>
+</body>
+    <footer>
+        <div class="footer-content">
+            <div class="quick-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email to stay in the loop!">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </footer>
+</html>
